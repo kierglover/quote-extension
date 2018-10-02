@@ -7,6 +7,5 @@ package-lock.json
 # ignore all logs
 *.log/
 
-.editorconfig/
-
-.gitattributes/
+.editorconfig
+.gitattributes
