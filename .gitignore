@@ -2,3 +2,11 @@
 coverage/
 dist/
 node_modules/
+package-lock.json
+
+# ignore all logs
+*.log/
+
+.editorconfig/
+
+.gitattributes/
