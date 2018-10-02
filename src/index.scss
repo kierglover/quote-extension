@@ -1,0 +1,28 @@
+@import 'base';
+
+body {
+     font-family: $font-stack;
+     background-color: white;
+}
+
+h1,
+h2,
+strong {
+  color: $main-text;
+}
+
+h2 {
+     margin-top: 1em;
+     padding-top: 1em
+}
+
+.container {
+     @include flex-container;
+}
+
+.card {
+     @include card-styles;
+     &__body {
+          font-size: 1em;
+     }
+}

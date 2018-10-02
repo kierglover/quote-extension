@@ -1,0 +1,29 @@
+//_base.scss
+
+$font-stack: "Roboto", "Helvetica", "Arial", sans-serif;
+$main-text: #566b78;
+$dark-text: #333;
+
+@mixin body-styles {
+     line-height: 1.5;
+     max-width: 50em;
+     margin: 0 auto;
+}
+
+@mixin flex-container {
+     display: flex;
+     height: 100vh;
+     padding: 0;
+     margin: 0;
+     align-items: center;
+     justify-content: center;
+     color: #555;
+}
+
+@mixin card-styles {
+     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+     padding: 2.25em;
+     text-align: left;
+     max-width: 50%;
+     border-left: 2px solid #69c;
+}
