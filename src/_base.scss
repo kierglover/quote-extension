@@ -1,0 +1,34 @@
+//_base.scss
+
+$font-stack: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto, Oxygen,Oxygen-Sans,'Fira Sans','Droid Sans',Ubuntu,Cantarell, 'Helvetica Neue',sans-serif;
+$main-text: #566b78;
+$light-text: #ccc;
+
+@mixin gradient-text {
+  background: linear-gradient(#EE7752, #E73C7E, #23A6D5, #23D5AB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin body-styles {
+  max-width: 50em;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+@mixin flex-container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+}
+
+@mixin card-styles {
+  padding: 2.25em;
+  max-width: 50%;
+  text-align: left;
+  border-radius: 0.25rem;
+}
