@@ -2,7 +2,7 @@
 
 body {
      font-family: $font-stack;
-     background-color: white;
+     background-color: #343434;
 }
 
 h1,
@@ -23,6 +23,19 @@ h2 {
 .card {
      @include card-styles;
      &__body {
-          font-size: 1em;
+       text-align: center;
+       font-size: 1.5em;
+       color: white;
+       font-weight: 500;
+       &__quote {
+         @include gradient-text;
+         font-family: cursive;
+         font-size: 4em;
+         margin: -0.8em;
+       }
+       &--light {
+         color: $light-text;
+         font-size: 0.7em;
+      }
      }
 }

@@ -1,12 +1,17 @@
 <template>
-     <div class="container">
+  <div>
+    <div class="container">
           <!-- <h2>{{hello}}</h2> -->
           <div class="card">
                <div class="card__body">
-                    {{quotes.quote}}
+                 <p class="card__body__quote">"</p>
+                  <p>{{quotes.quote}}</p>
+                  <p class="card__body--light">{{quotes.author}}</p>
                </div>
           </div>
      </div>
+    </div>
+  </div>
 </template>
 
 <script>
