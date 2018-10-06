@@ -10,6 +10,7 @@
       <div class="footer">
         <div class="footer__body">
           <p class="footer__body__link">{{currentTime}}</p>
+          <p class="footer__body__link--right">{{currentDate}}</p>
         </div>
       </div>
     </div>
@@ -32,7 +33,8 @@ export default {
   methods: {
     updateCurrentTime() {
       this.currentTime = moment().format('LTS');
-    }
+      this.currentDate = moment().format('MMM Do YY');
+    },
   },
   created() {
     this.currentTime = moment().format('LTS');
