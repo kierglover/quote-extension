@@ -24,6 +24,7 @@ export default {
     return {
       moment:moment,
       quotes: [],
+      currentTime: null,
       hello: "Hello World!",
       testQuote: "This is a test quote. Test test test test test test test test"
     };
