@@ -4,10 +4,12 @@ $font-stack: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto, Oxygen,Oxygen-S
 $main-text: #566b78;
 $light-text: #ccc;
 
-@mixin gradient-text {
-  background: linear-gradient(#EE7752, #E73C7E, #23A6D5, #23D5AB);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@mixin gradient-bg {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
 @mixin body-styles {
@@ -23,12 +25,24 @@ $light-text: #ccc;
   padding: 0;
   justify-content: center;
   align-items: center;
-  color: #555;
+  flex-wrap: wrap;
 }
 
 @mixin card-styles {
-  padding: 2.25em;
   max-width: 50%;
-  text-align: left;
-  border-radius: 0.25rem;
+  margin-top: 11em;
+}
+
+//ANIMATIONS
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
